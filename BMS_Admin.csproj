@@ -5,6 +5,7 @@
     <UserSecretsId>aspnet-BMS_Admin-2f19b6fa-334d-4b4a-8b5d-7b0647707b05</UserSecretsId>
     <WebProject_DirectoryAccessLevelKey>1</WebProject_DirectoryAccessLevelKey>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerfileContext>.</DockerfileContext>
   </PropertyGroup>
 
   <ItemGroup>

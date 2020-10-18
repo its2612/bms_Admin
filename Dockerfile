@@ -7,10 +7,10 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/core/sdk:3.1-buster AS build
 WORKDIR /src
-COPY ["BMS_Admin/BMS_Admin.csproj", "BMS_Admin/"]
-RUN dotnet restore "BMS_Admin/BMS_Admin.csproj"
-COPY . .
-WORKDIR "/src/BMS_Admin"
+COPY ["BMS_Admin.csproj", ""]
+RUN dotnet restore "./BMS_Admin.csproj"
+#COPY . .
+WORKDIR "/src/."
 RUN dotnet build "BMS_Admin.csproj" -c Release -o /app/build
 
 FROM build AS publish
